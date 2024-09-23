@@ -1,0 +1,15 @@
+Flask==3.0.3
+moviepy==1.0.3
+Werkzeug==3.0.4
+blinker
+click
+itsdangerous
+Jinja2
+decorator
+imageio
+imageio-ffmpeg
+numpy
+proglog
+requests
+tqdm
+MarkupSafe
