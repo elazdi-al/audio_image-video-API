@@ -1,9 +1,21 @@
 {
   "version": 2,
   "builds": [
-    { "src": "app.py", "use": "@vercel/python" }
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb",
+        "runtime": "python3.9",
+        "maxDuration": 30
+      }
+    }
   ],
-  "routes": [
-    { "src": "/create-video", "dest": "/app.py" }
+ "routes": [
+    {
+      "src": "/create-video",
+      "methods": ["POST"],
+      "dest": "/api/index.py"
+    }
   ]
 }

@@ -13,3 +13,4 @@ proglog
 requests
 tqdm
 MarkupSafe
+Pillow<10.0.0
